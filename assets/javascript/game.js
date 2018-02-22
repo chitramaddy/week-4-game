@@ -21,4 +21,4 @@
 
     empty the values picked for the targetScore, gems
     show the start button
-    alert the user to click start to begin a new game
+    alert the user to click start to begin a new game*/

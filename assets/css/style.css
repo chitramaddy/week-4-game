@@ -1,9 +1,55 @@
-body {
-    margin: 0 px;
-    border-style: solid;
-    border: 3px;
-    border-color:brown;
-    /*background: url("../images/mountain.jpg");*/
+*{
+  box-sizing: border-box;
+
+}   
+
+body{
+    margin: 3px;
+   border:1px solid aquamarine;
+   background: url("../images/crystal.jpg");
 }
+
+.container-main{
+    background-color: palevioletred;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-align: center;
+    color:gold;
+   
+}
+
+.img-thumbnail{
+    background-color: goldenrod;
+}
+
+.score{
+    border:1px solid orange;
+    background-color: steelblue;
+    font-weight: bold;
+    font-size: 20px;
+}
+#targetScore, #totalScore{
+    height: 100px;
+}
+
+#targetScore, #totalScore, #wins, #losses{
+    font-weight: bold;
+    font-size: 20px;    
+}
+
+#wins, #losses{
+    border: 1px solid orange;
+    background-color: moccasin;
+    text-indent: 3px;
+}
+
+ul{
+    list-style: square;
+    color: orange;
+}
+
+
+
+
+
 
 
