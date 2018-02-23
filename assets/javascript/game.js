@@ -39,6 +39,11 @@ $(".button").on("click", function(){
     console.log("targetScore"+targetScore)
     $("#targetScore").html(targetScore);
 
+    for(i=0; i<crystalArray.length; i++){
+       randomValue = getRndInteger(1,12);
+       console.log(randomValue);
+    }
+
 if (gameRunning){
     $(".img-thumbnail").on("click", function(){
 
