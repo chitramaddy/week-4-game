@@ -24,10 +24,33 @@ startBtn.attr("src", "<i class='fas fa-play-circle'></i>");
 
 $(".crystals").append(startBtn);
 
+//this will generate a random integer
+function getRndInteger(min, max) {
+   return Math.floor(Math.random() * (max - min + 1) ) + min;
+}
+
 $(document).ready(function(){
 
 $(".button").on("click", function(){
     $(".button").hide(this);
+    gameRunning ===true;
+
+    var targetScore = getRndInteger(19,120);
+    console.log("targetScore"+targetScore)
+    $("#targetScore").html(targetScore);
+
+if (gameRunning){
+    $(".img-thumbnail").on("click", function(){
+
+
+    });
+
+
+}
+else (!gameRunning)
+
+
+
 
 
 
