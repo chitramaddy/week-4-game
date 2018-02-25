@@ -1,62 +1,83 @@
-*{
-  box-sizing: border-box;
-
-}   
-
-body{
-    margin: 3px;
-   border:1px solid aquamarine;
-   background: url("../images/crystal1.jpg");
+* {
+    box-sizing: border-box;  
 }
 
-.container-main{
+body {
+    margin: 0px;
+    padding: 0px;
+    text-align: center;
+    border: 1px solid aquamarine;
+    background: url("../images/crystal1.jpg");
+}
+
+.full {
+    margin-top: 60px;
+    margin-bottom: 60px;
+    margin-right: 20px;
+    padding: 0;
+    text-align: left;
+}
+
+.container-main {
     background-color: palevioletred;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     text-align: center;
-    color:gold;
-   
+    color: gold;
 }
 
-.img-thumbnail{
-    background-color: goldenrod;
+.img-thumbnail {
+    border: 3px solid goldenrod;
     cursor: pointer;
+    
 }
 
-.button{
-    width: 50px;
-    height: 50px;
-   
+.button {
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-left: -50px;
+    z-index: 2000;
+    background-color: white;
+    box-shadow: 1px 1px 1px blue;
 }
 
-.score{
-    border:1px solid orange;
+.big {
+    color: royalblue;
+    font-size: 85px;
+}
+
+.score {
+    border: 1px solid orange;
     background-color: steelblue;
     font-weight: bold;
     font-size: 20px;
 }
-#targetScore, #totalScore{
+
+#targetScore,
+#totalScore {
     height: 100px;
 }
 
-#targetScore, #totalScore, #wins, #losses{
+#targetScore,
+#totalScore{
+    text-align: center;
     font-weight: bold;
-    font-size: 20px;    
+    font-size: 45px;
 }
 
-#wins, #losses{
+#wins,
+#losses {
+    height: 50%;
     border: 1px solid orange;
     background-color: moccasin;
     text-indent: 3px;
+    font-weight: bold;
+    font-size: 20px;
 }
 
-ul{
+ul {
     list-style: square;
     color: orange;
 }
-
-
-
-
-
-
-
