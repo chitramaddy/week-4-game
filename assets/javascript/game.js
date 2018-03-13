@@ -6,6 +6,7 @@ var totalScore = 0;
 var wins = 0;
 var losses = 0;
 var gameRunning = false;
+var isScored = false;
 
 //DOM elements for variables
 
@@ -34,9 +35,13 @@ function getRndInteger(min, max) {
 
 //to check if the player won
 function checkWin() {
+    
+    if(isScored===true) return;
+
     if (targetScore === totalScore) {
         wins++;
         console.log(wins);
+        isScored = true;
         $("#wins").text("wins: " + wins);
         gameRunning = false;
         $(".button").show(this);
@@ -45,10 +50,16 @@ function checkWin() {
 }
 
 function checkLost() {
+
+    if(isScored===true) return;
+
     if (targetScore < totalScore) {
         losses++;
+        isScored = true;
         $("#losses").text("losses: " + losses);
         gameRunning = false;
+        
+
         $(".button").show(this);
     }
     checkWin();
@@ -61,6 +72,7 @@ $(document).ready(function () {
 
         $(".button").hide(this);
         gameRunning = true;
+        isScored = false;
         $("#totalScore").empty();
         totalScore=0;
         
