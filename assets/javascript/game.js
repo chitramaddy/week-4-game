@@ -1,4 +1,4 @@
-//variables targetScore, wins, losses, crystalArray[];, totalScore,
+    //variables targetScore, wins, losses, crystalArray[];, totalScore,
 var targetScore;
 //var crystalArray = [];
 //var randomValue = [];
